@@ -1,0 +1,104 @@
+/* Welcome.css */
+@font-face {
+  font-family: "Jersey 15";
+  src: url("../../../../public/fonts/Jersey15-Regular.ttf") format("truetype");
+}
+.fullpage-section {
+  height: 100vh; /* Set explicit height for each section */
+}
+
+.welcome-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+
+.background-image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/welcome_bc.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.background-image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/welcome2_bc.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.background-image3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/welcome3_bc.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the opacity to make it darker or lighter */
+}
+
+.astronaut-icon {
+  font-size: 100px;
+  color: #fff;
+}
+
+.welcome-text {
+  font-family: "Jersey 15", sans-serif;
+  font-size: 42px; /* Adjust the font size as needed */
+  margin-top: 20px;
+  color: #fff;
+}
+
+.subtext {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.explore-button {
+  background-color: #0b2029;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #243a3c;
+}
+
+.content {
+  text-align: left;
+  margin-top: 200px;
+  justify-content: left;
+  margin-left: 50px;
+}

@@ -1,0 +1,112 @@
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/Homebg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -5;
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 19, 19, 0.5);
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  min-width: 900px;
+}
+
+.imglogo {
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
+  display: block;
+  border-radius: 100%;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+p {
+  color: #fff;
+  font-size: 14px;
+}
+
+a {
+  color: #007bff;
+}
+
+.form-label {
+  color: #fff; /* Label color */
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  backdrop-filter: blur(1rem);
+  width: 50%; /* Input text width */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control::placeholder {
+  color: #bab8b8 !important;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+@media (min-width: 768px) {
+  .login-form {
+    max-width: 400px;
+  }
+}
+.login-form h2 {
+  position: relative;
+  color: #fff; /* Text color */
+  font-size: 24px; /* Font size */
+  font-weight: 600; /* Font weight */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+.login-form h2::after {
+  content: "";
+  position: absolute;
+  left: 390px;
+  bottom: -5px;
+  width: 90px;
+  height: 4px;
+  background: #fff; /* Line color */
+}

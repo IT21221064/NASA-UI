@@ -1,0 +1,102 @@
+/* NavBar.css */
+@font-face {
+  font-family: "Jersey 15";
+  src: url("../../../../public/fonts/Jersey15-Regular.ttf") format("truetype");
+}
+
+.header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.header .navbar img {
+  width: 80px;
+  height: 80px;
+  margin-top: -75px;
+  margin-left: -100px;
+}
+
+.logo-text {
+  font-size: 2.25rem;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: -10px;
+  text-shadow: 2px 2px 4px #000000 !important;
+  font-family: "Jersey 15", sans-serif;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #00ffff;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .navbar {
+    padding: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem; /* Adjust spacing */
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px; /* Adjust top position */
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px); /* Adjust height */
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+    background: linear-gradient(to right, #0a1822, #203947);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+    font-weight: 500;
+  }
+}

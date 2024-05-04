@@ -1,0 +1,80 @@
+.custom-h1 {
+  font-family: "Space Mono", monospace !important;
+  color: #f7f7f7 !important;
+  text-shadow: 2px 2px 4px #000000 !important;
+}
+
+.custom-h2 {
+  font-family: "Space Mono", monospace !important;
+  color: #d1d1d1 !important;
+}
+.custom-label {
+  font-family: "Space Mono", monospace;
+  color: #b6d2ef;
+}
+
+.background-image-home {
+  position: fixed; /* Keeps the background image fixed while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%; /* Covers the entire width of the viewport */
+  height: 100%; /* Covers the entire height of the viewport */
+  background-image: url("../../../public/images/EPIC.jpg");
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  z-index: -1; /* Places the background image behind other content */
+}
+
+.background-image-home::before {
+  content: ""; /* Creates a pseudo-element to apply overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adds a semi-transparent overlay */
+}
+
+/* Custom CSS for date picker input */
+#datePicker {
+  /* Apply your custom styles here */
+  border: 2px solid #b6d2ef; /* Example border color */
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #b6d2ef; /* Example text color */
+  background-color: #494c50; /* Example background color */
+}
+
+/* Custom styling for date picker input when it's focused */
+#datePicker:focus {
+  /* Apply styles when the input is focused */
+  border-color: #0056b3; /* Example border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Example box shadow on focus */
+}
+#datePicker::before {
+  color: #007bff; /* Example color for the calendar icon */
+}
+.input-custom {
+  border: 2px solid #00b7ff;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  color: #b6d2ef;
+  background-color: #454546;
+}
+
+.input-custom:focus {
+  border-color: #0074b3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.card-img-custom {
+  border-radius: 20px;
+  border-color: #b6d2ef !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+.card-img-custom:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+}

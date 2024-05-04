@@ -1,0 +1,77 @@
+.custom2-h1 {
+  font-family: "Space Mono", monospace !important;
+  color: #7eb4f2 !important;
+  text-shadow: 2px 2px 4px #000000 !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.custom2-h2 {
+  font-family: "Space Mono", monospace !important;
+  color: #b6e6ef !important;
+  text-shadow: 1px 1px 2px #000000 !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.custom-label {
+  font-family: "Space Mono", monospace;
+  color: #b6d2ef;
+}
+.card-img-custom {
+  border-radius: 20px;
+  border-color: #b6e6ef !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+.card-img-custom:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+}
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ) !important; /* Remove the background color */
+}
+
+.background-image {
+  position: fixed; /* Keeps the background image fixed while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%; /* Covers the entire width of the viewport */
+  height: 100%; /* Covers the entire height of the viewport */
+  background-image: url("../../../public/images/EPIC.jpg");
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  z-index: -1; /* Places the background image behind other content */
+}
+
+.background-image::before {
+  content: ""; /* Creates a pseudo-element to apply overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adds a semi-transparent overlay */
+}
+/* Add this CSS to your InnovationList.css file */
+
+.card-body-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card-body-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.card-body-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.card-body-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.card-body-scroll {
+  padding: 10px;
+}
